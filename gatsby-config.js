@@ -21,6 +21,12 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
       options: {},
+      resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [
+            `gatsby-remark-emoji`,  // <-- this line adds emoji
+          ]
+        }
     },
     {
       resolve: `gatsby-plugin-manifest`,
